@@ -6,7 +6,7 @@ const addAdvice=async()=>{
     const advice=document.querySelector('#advice');
     adviceNums.innerText=`Advice #${adviceText.id}`;
     advice.innerText=`"${adviceText.advice}"`;
-    button.style.boxShadow=''
+
 }
 
 const getAdvice=async()=>{
@@ -14,6 +14,7 @@ const getAdvice=async()=>{
     try{
         const config={headers:{Accept:'application/json'}};
         const res = await axios.get("https://api.adviceslip.com/advice",config);
+        button.style.boxShadow=''
         return res.data.slip;
     }catch(e){
         return "ERROR: Something went wrong!"
