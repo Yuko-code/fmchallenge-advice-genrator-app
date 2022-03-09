@@ -11,14 +11,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 </head>
 <body>
   <div class="card">
     <!-- Advice ID goes here -->
-    <h1>Advice #117</h1>
+    <h1 id="adviceNums">Advice #117</h1>
     <!-- Advice text goes here -->
-    <p>"It is easy to sit up and take notice,
+    <p id="advice">"It is easy to sit up and take notice,
         what's difficult is getting up and taking action"</p>
     <svg class="mobile-divider" width="295" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd">
       <path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z"/>
@@ -32,8 +33,8 @@
           <g transform="translate(212)" fill="#CEE3E9">
             <rect width="6" height="16" rx="3"/>
             <rect x="14" width="6" height="16" rx="3"/></g></g></svg>
-    <img class="dice-icon" src = "/images/icon-dice.svg" alt="Dice icon"/>
+    <button id="button"><img class="dice-icon" src = "/images/icon-dice.svg" alt="Dice icon"/></button>
   </div>
-
+<script src="index.js"></script>
 </body>
 </html>
