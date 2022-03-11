@@ -38,6 +38,7 @@ body{
     top: 120px;
     left: 50%;
     transform: translate(-50%, 0%);
+
 }
 h1{
     color: var(--color-neon-green);
@@ -70,6 +71,8 @@ button{
     justify-content: center;
     align-items: center;
     transition: .2s;
+
+
 }
 
 button:hover{
@@ -90,6 +93,31 @@ button:hover{
 .desktop-divider{
     display:none;
 }
+
+.loader {
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+
+
+
+
+    border: 16px solid var(--color-greyish-blue);
+    border-top: 16px solid var(--color-neon-green);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
 
 @media only screen and (max-width: 360px){
     .card{
